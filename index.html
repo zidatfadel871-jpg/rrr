@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجري الاحترافي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">متجري<span>.</span></div>
+        
+        <div id="auth-section">
+            <button id="loginBtn" class="btn-google">تسجيل الدخول بجوجل</button>
+            <div id="user-info" class="user-profile" style="display: none;">
+                <span id="user-name"></span>
+                <img id="user-pic" src="" alt="user">
+                <button id="logoutBtn" class="btn-logout">خروج</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="products-section">
+            <h2>المنتجات المختارة</h2>
+            <div class="grid" id="products-list">
+                </div>
+        </section>
+
+        <section class="admin-panel">
+            <h3>➕ إضافة منتج جديد</h3>
+            <div class="form-group">
+                <input type="text" id="pName" placeholder="اسم المنتج">
+                <input type="number" id="pPrice" placeholder="السعر (ر.س)">
+                <input type="text" id="pImage" placeholder="رابط صورة المنتج">
+                <button class="btn-add" id="addBtn">حفظ في القاعدة</button>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
